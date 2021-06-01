@@ -21,10 +21,23 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact Me</a></li>
           </ul>
-          <img src="img/hamburger-menu.svg" class="menu-btn" alt="Menu" />
+          <button role="button" id="btn-nav" onclick="myFunction()">
+            Menu
+            <!-- <img src="img/hamburger-menu.svg" class="menu-btn" alt="Menu" />-->
+          </button>
         </nav>
       </header>
       <main class="content">
+        <div id="over-lay">
+          <button role="button" id="exit-nav" onclick="closeBtn()">
+            <img src="" class="exit-btn" alt="Menu" />
+          </button>
+          <ul class="overlay-list">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
         <div class="hero-section">
           <div class="hero-content">
             <span class="greeting"> Hello there!</span>
@@ -42,25 +55,27 @@
           </div>
         </div>
 
-        <div class="aboutMe">
+        <div class="aboutMe-content">
           <h3>About Me</h3>
-          <section class="headshot">
-            <img
-              src="https://i.imgur.com/drSuuuA.jpg"
-              alt="Picture of Gideon"
-              class="headshot-img"
-            />
-          </section>
-          <section class="short-bio">
-            <p>
-              My name is Gideon Etowa, a product designer and frontend web
-              developer. I also work as a visual designer on various projects. I
-              am a product designer with frontend development skills, who is
-              passionate about functional and user-centered designs. i am big on
-              responsive designs that convert customers and users to the desired
-              level that my clients want.
-            </p>
-          </section>
+          <div class="bio">
+            <section class="headshot">
+              <img
+                src="https://i.imgur.com/drSuuuA.jpg"
+                alt="Picture of Gideon"
+                class="headshot-img"
+              />
+            </section>
+            <section class="short-bio">
+              <p>
+                My name is Gideon Etowa, a product designer and frontend web
+                developer. I also work as a visual designer on various projects.
+                I am a product designer with frontend development skills, who is
+                passionate about functional and user-centered designs. i am big
+                on responsive designs that convert customers and users to the
+                desired level that my clients want.
+              </p>
+            </section>
+          </div>
           <section class="">
             <p>My work process</p>
             <span class="work-process"> </span>
