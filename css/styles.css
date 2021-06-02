@@ -98,11 +98,13 @@ nav ul a {
 
 .greeting {
   color: #5c5b5b;
+  margin-bottom: 5px;
 }
 
 h1 {
   color: #5c5b5b;
   margin-bottom: 7%;
+  margin-top: 20px;
 }
 em {
   color: #eeae08;
@@ -121,7 +123,7 @@ em {
 button:hover {
   background-color: red;
 }
-h3 {
+h2 {
   text-align: center;
   margin-top: 20%;
 }
@@ -132,7 +134,51 @@ h3 {
   margin-bottom: 5%;
 }
 
+.short-bio {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10%;
+}
+
+.short-bio p {
+  line-height: 150%;
+}
+
+.projects-tiles {
+  width: 80%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-img {
+  width: 100%;
+}
+.btn-tile {
+  margin-bottom: 0;
+  padding: 20px;
+  background-color: blue;
+  width: 100%;
+  text-decoration: none;
+  font-style: normal;
+}
+
 @media screen and (min-width: 640px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .projects-img {
+    width: 200px;
+  }
   .bio {
     display: flex;
     justify-content: space-between;
@@ -145,8 +191,27 @@ h3 {
   p {
     order: 2;
   }
+}
+.contact {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact {
+  line-height: 150%;
+}
+.social-links {
+  text-align: center;
+}
 
-  .short-bio {
-    width: 470px;
-  }
+.footer {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  color: #5c5b5b;
+}
+
+.fa {
+  width: 50px;
+  margin-bottom: 20px;
 }
