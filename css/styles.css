@@ -5,6 +5,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+.container {
+  width: 100%;
+  height: auto;
+}
+
 .dark-mode {
   background-color: black;
   color: #fff;
@@ -13,21 +23,24 @@
   background-color: rgba(145, 142, 142, 0.7);
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-.container {
-  width: 100%;
-  height: auto;
-}
-
 .header {
   width: 100%;
 }
 
-.navbar {
+nav {
   display: flex;
   justify-content: space-between;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+nav li {
+  display: inline;
+}
+
+.navbar {
   width: 100%;
   height: 45px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -39,10 +52,8 @@ body {
   backdrop-filter: blur(25px);
   position: fixed;
   top: 0;
-}
-
-nav ul {
-  visibility: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 nav ul a {
@@ -51,48 +62,11 @@ nav ul a {
   color: #000000;
 }
 
-#sliding-nav {
-  visibility: hidden;
-}
-
-.over-lay {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background-color: #000000;
-  z-index: 10000;
-}
-
-.overlay-list {
-  list-style: none;
-  position: relative;
-  top: 3%;
-  text-align: center;
-  visibility: hidden;
-}
-.overlay-list li {
-  margin: 20px;
-}
-
-.overlay-list a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: normal;
-  color: #fff;
-}
-.overlay-list a:hover {
-  color: #eeae08;
-}
-.overlay-list a:active {
-  color: #eeae08;
-}
-
 .hero-section {
-  margin-top: 10%;
-  width: 80%;
+  margin-top: 300px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
 }
 
 .greeting {
@@ -105,10 +79,12 @@ h1 {
   margin-bottom: 7%;
   margin-top: 20px;
 }
+
 em {
   color: #eeae08;
   font-style: normal;
 }
+
 .btn-hire {
   border: none;
   width: 250px;
@@ -188,27 +164,34 @@ h3 {
 }
 
 @media screen and (min-width: 640px) {
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .projects-img {
-    width: 200px;
-  }
-  .bio {
-    display: flex;
-    justify-content: space-between;
-  }
-  .headshot-img {
-    width: 470px;
-    order: 1;
+  .nav-links {
+    visibility: visible;
+    margin-top: 15px;
+    float: right;
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
   }
 
-  p {
-    order: 2;
+  .nav-links li {
+    margin-right: 50px;
+  }
+  .fa-bars {
+    visibility: hidden;
+  }
+  .hero-section {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .hero-content {
+    width: 50%;
+    padding-right: 15px;
+  }
+  .hero-img {
+    width: 50%;
   }
 }
+
 .contact {
   width: 90%;
   margin-left: auto;
@@ -243,6 +226,7 @@ h3 {
   text-align: center;
   padding: 10px;
   float: right;
+  box-shadow: 3px 8px 10px rgba(88, 87, 87, 0.1);
 }
 
 .fa-moon-o {

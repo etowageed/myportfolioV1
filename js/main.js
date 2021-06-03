@@ -1,5 +1,5 @@
 function darkMode() {
-  var nightMode = document.getElementById("container-div");
+  var nightMode = document.getElementById("body");
   nightMode.classList.toggle("dark-mode");
   var nightModeNav = document.getElementById("nav-navbar");
   nightModeNav.classList.toggle("dark-mode-nav");
