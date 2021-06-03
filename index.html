@@ -19,29 +19,16 @@
     <div class="container" id="container-div">
       <header class="header">
         <img src="" alt="" class="logo" />
-        <nav class="navbar">
+        <nav class="navbar" id="nav-navbar">
           <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact Me</a></li>
           </ul>
-          <button role="button" id="btn-nav">
-            Menu
-            <!-- <img src="img/hamburger-menu.svg" class="menu-btn" alt="Menu" />-->
-          </button>
+          <button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
         </nav>
       </header>
       <main class="content"></main>
-        <div id="over-lay">
-          <button role="button" id="exit-nav" >
-            <img src="" class="exit-btn" alt="Menu" />
-          </button>
-          <ul class="overlay-list">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-          </ul>
-        </div>
         <div class="hero-section">
           <div class="hero-content">
             <span class="greeting"> Hello there! 👋</span>
@@ -60,7 +47,7 @@
         </div>
 
         <div class="aboutMe-content">
-          <h2>About Me</h2>
+          <h3>About Me</h3>
           <div class="bio">
             <section class="headshot">
               <img
@@ -140,8 +127,8 @@
             you just want to talk about it or anything in general, guess what?
             I'm still your guy 😎😎 </span
           ><br /><br />
-<button onclick="darkMode()" class="toggleBtn"><i class="fa fa-moon-o fa-lg"></i></button>
-          <div class="social-links">
+<button onclick="darkMode()" class="toggleBtn"><i id="moon" class="fa fa-moon-o fa-lg"></i></button>        
+<div class="social-links">
             <span class="social-email"
               ><i class="fa fa-envelope-o fa-lg"></i></span
             ><span class="social-email-text"
