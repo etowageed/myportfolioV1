@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="container" onscroll="scrollEve()">
+    <div class="container" id="container-div">
       <header class="header">
         <img src="" alt="" class="logo" />
         <nav class="navbar">
@@ -25,15 +25,15 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact Me</a></li>
           </ul>
-          <button role="button" id="btn-nav" onclick="myFunction()">
+          <button role="button" id="btn-nav">
             Menu
             <!-- <img src="img/hamburger-menu.svg" class="menu-btn" alt="Menu" />-->
           </button>
         </nav>
       </header>
-      <main class="content">
+      <main class="content"></main>
         <div id="over-lay">
-          <button role="button" id="exit-nav" onclick="closeBtn()">
+          <button role="button" id="exit-nav" >
             <img src="" class="exit-btn" alt="Menu" />
           </button>
           <ul class="overlay-list">
@@ -140,7 +140,7 @@
             you just want to talk about it or anything in general, guess what?
             I'm still your guy 😎😎 </span
           ><br /><br />
-
+<button onclick="darkMode()" class="toggleBtn"><i class="fa fa-moon-o fa-lg"></i></button>
           <div class="social-links">
             <span class="social-email"
               ><i class="fa fa-envelope-o fa-lg"></i></span
