@@ -54,6 +54,7 @@ nav li {
   top: 0;
   padding-left: 10px;
   padding-right: 10px;
+  z-index: 100000;
 }
 
 nav ul a {
@@ -63,7 +64,7 @@ nav ul a {
 }
 
 .hero-section {
-  margin-top: 300px;
+  margin-top: 200px;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -121,23 +122,6 @@ h3 {
 .short-bio p {
   line-height: 150%;
 }
-
-.projects-tiles {
-  width: 80%;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.projects-img {
-  width: 100%;
-}
 .btn-tile {
   margin-bottom: 0;
   padding: 20px;
@@ -157,9 +141,27 @@ h3 {
     color: #fff;
     font-weight: bold;
     border-radius: 50px;
-    margin-top: 7%;
+    margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  .hero-section {
+    margin-top: 180px;
+  }
+  .projects {
+    width: 100%;
+  }
+  .projects-tiles {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projects-img {
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -181,7 +183,10 @@ h3 {
   }
   .hero-section {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* border: 1px solid black; 
+   this was just meant to help me align both divs
+   */
   }
   .hero-content {
     width: 50%;
@@ -189,11 +194,54 @@ h3 {
   }
   .hero-img {
     width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .rect {
+    width: 500px;
+    height: 300px;
+    background-color: rgba(177, 171, 171, 0.644);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(9px);
+    -moz-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    border-radius: 20px;
+    transform: rotate(-4.63deg);
+  }
+
+  .rect-2 {
+    transform: rotate(4.63deg);
+    position: absolute;
+    top: 204px;
+  }
+
+  .btn-contact {
+    background-color: #642087;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+  }
+  .projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .projects-tiles {
+    width: 250px;
+  }
+
+  .projects-img {
+    width: 250px;
   }
 }
 
 .contact {
-  width: 90%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -218,7 +266,7 @@ h3 {
 }
 
 .toggleBtn {
-  background-color: #413f3f;
+  background-color: #646262;
   width: 50px;
   height: 50px;
   border-radius: 100px;
