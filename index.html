@@ -16,14 +16,15 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body id="body">
+    
     <div class="container" id="container-div">
       <header class="header">
   
         <nav class="navbar" id="nav-navbar">
           <ul class="nav-links"> 
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#" class="btn-contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact" class="btn-contact">Contact</a></li>
           </ul>
           <button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
         </nav>
@@ -52,6 +53,7 @@
           <h3>About Me</h3>
           <div class="bio">
             <section class="headshot">
+              <section class="headshot-shape"></section>
               <img
                 src="https://i.imgur.com/drSuuuA.jpg"
                 alt="Picture of Gideon"
@@ -59,20 +61,20 @@
               />
             </section>
             <section class="short-bio">
-              <p>
+              <span class="short-bio-text">
                 My name is Gideon Etowa, a Product Designer and Front-end Web
                 Developer based in Lagos, Nigeria. I design products that are
-                user-friendly, functional and accessible. <br /><br />My
+                user-friendly, functional and accessible. <br />My
                 workflow involves user research, competitive analysis, ideation,
                 wireframing, prototyping, testing and finally implementation to
-                create appealing yet functional products.
-              </p>
+                create appealing yet functional products.<br/>  
+              </span>
             </section>
           </div>
         </div>
 
         <h3 style="text-align: center; margin-bottom: 10px">Selected Works</h3>
-        <div class="projects">
+        <div class="projects" id="work">
           <div class="projects-tiles">
             <img
               src="https://i.imgur.com/Q0Yfm7a.png"
@@ -123,7 +125,7 @@
           </div>
         </div>
 
-        <div class="contact">
+        <div class="contact" id="contact">
           <span style="text-align: center; line-height: 150%">
             If you've got an idea you want to bring to reality, I'm your guy. If
             you just want to talk about it or anything in general, guess what?

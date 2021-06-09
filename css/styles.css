@@ -240,6 +240,40 @@ h3 {
   }
 }
 
+@media screen and (min-width: 769px) {
+  .bio {
+    display: flex;
+    border: 1px solid black;
+  }
+  .short-bio {
+    width: 40%;
+    order: 1;
+    margin-top: 100px;
+  }
+  .headshot {
+    width: 40%;
+    order: 2;
+    margin-right: 10px;
+  }
+  .headshot-shape {
+    position: absolute;
+    right: 40px;
+    margin-top: 32.5px;
+    border: 3px solid #eeae08;
+    width: 40%;
+    height: 70vh;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 100px;
+  }
+  .headshot-img {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 100px;
+  }
+  .short-bio-text {
+    line-height: 200%;
+  }
+}
+
 .contact {
   width: 60%;
   margin-left: auto;
@@ -275,6 +309,10 @@ h3 {
   padding: 10px;
   float: right;
   box-shadow: 3px 8px 10px rgba(88, 87, 87, 0.1);
+  z-index: 99;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
 }
 
 .fa-moon-o {
