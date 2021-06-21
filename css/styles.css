@@ -157,12 +157,6 @@ h3 {
     margin-left: auto;
     margin-right: auto;
   }
-
-  .projects-img {
-    width: 250px;
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 
 @media screen and (min-width: 640px) {
@@ -232,10 +226,6 @@ h3 {
     justify-content: space-between;
   }
   .projects-tiles {
-    width: 250px;
-  }
-
-  .projects-img {
     width: 250px;
   }
 }
