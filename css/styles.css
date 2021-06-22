@@ -8,7 +8,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  width: 100%;
 }
 .container {
   width: 100%;
@@ -122,15 +121,69 @@ h3 {
 .short-bio p {
   line-height: 150%;
 }
-.btn-tile {
-  margin-bottom: 0;
-  padding: 20px;
-  background-color: blue;
-  width: 100%;
-  text-decoration: none;
-  font-style: normal;
+
+.contact {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact {
+  line-height: 150%;
+}
+.social-links {
+  text-align: center;
 }
 
+.footer {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  color: #5c5b5b;
+  margin-top: 50px;
+}
+
+.fa {
+  width: 50px;
+  margin-bottom: 20px;
+}
+.toggleBtn {
+  background-color: #646262;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  float: right;
+  box-shadow: 3px 8px 10px rgba(88, 87, 87, 0.1);
+  z-index: 99;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.fa-moon-o {
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+
+.fa-sun-o {
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+
+.fa-bars {
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+
+.btn-menu {
+  border: none;
+  background: none;
+}
 @media screen and (max-width: 639px) {
   .btn-hire {
     border: none;
@@ -151,17 +204,23 @@ h3 {
   }
   .projects {
     width: 100%;
-  }
-  .projects-tiles {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
 
-  .projects-img {
-    width: 250px;
-    margin-right: auto;
+  .tiles {
+    width: 18.06rem;
+    height: 18.3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px 0;
     margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    
   }
 }
 
@@ -226,20 +285,27 @@ h3 {
     color: #fff;
   }
   .projects {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .projects-tiles {
-    width: 250px;
+    justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
   }
 
-  .projects-img {
-    width: 250px;
+  .tiles {
+    width: 18.06rem;
+    height: 18.3rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px;
   }
-}
-
+  
+  
 @media screen and (min-width: 769px) {
   .bio {
     display: flex;
@@ -272,68 +338,4 @@ h3 {
   .short-bio-text {
     line-height: 200%;
   }
-}
-
-.contact {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.contact {
-  line-height: 150%;
-}
-.social-links {
-  text-align: center;
-}
-
-.footer {
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  color: #5c5b5b;
-  margin-top: 50px;
-}
-
-.fa {
-  width: 50px;
-  margin-bottom: 20px;
-}
-
-.toggleBtn {
-  background-color: #646262;
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-  border: none;
-  text-align: center;
-  padding: 10px;
-  float: right;
-  box-shadow: 3px 8px 10px rgba(88, 87, 87, 0.1);
-  z-index: 99;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-}
-
-.fa-moon-o {
-  vertical-align: middle;
-  text-align: center;
-  display: table-cell;
-}
-
-.fa-sun-o {
-  vertical-align: middle;
-  text-align: center;
-  display: table-cell;
-}
-
-.fa-bars {
-  vertical-align: middle;
-  text-align: center;
-  display: table-cell;
-}
-
-.btn-menu {
-  border: none;
-  background: none;
 }
