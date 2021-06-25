@@ -53,7 +53,7 @@ nav li {
   top: 0;
   padding-left: 10px;
   padding-right: 10px;
-  z-index: 100000;
+  z-index: 300;
 }
 
 nav ul a {
@@ -215,11 +215,44 @@ h3 {
     width: 18.06rem;
     height: 18.3rem;
     border-radius: 20px;
-    box-shadow: 0 8px 20px 0;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  aside {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    visibility: hidden;
+  }
+  aside ul {
+    text-align: center;
+    margin-top: 200px;
+  }
+  aside ul li {
+    list-style: none;
+    margin-top: 20px;
+    color: #eeae08;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+  aside ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  aside ul li a:hover {
+    color: #eeae08;
+  }
+  .fa-times {
+    font-weight: lighter;
+  }
+  #btn-close {
+    background: none;
+    border: none;
   }
 }
 
@@ -231,6 +264,10 @@ h3 {
     position: absolute;
     right: 0;
     padding-right: 10px;
+  }
+
+  aside {
+    display: none;
   }
 
   .nav-links li {
@@ -299,7 +336,7 @@ h3 {
     width: 18.06rem;
     height: 18.3rem;
     border-radius: 20px;
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
     margin: 20px;
   }
 }
@@ -308,6 +345,9 @@ h3 {
   .bio {
     display: flex;
     border: 1px solid black;
+  }
+  aside {
+    display: none;
   }
   .short-bio {
     width: 40%;
