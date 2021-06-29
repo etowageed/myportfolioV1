@@ -1,3 +1,4 @@
+/* toggling between modes */
 function darkMode() {
   let nightMode = document.getElementById("body");
   nightMode.classList.toggle("dark-mode");
@@ -10,9 +11,9 @@ function darkMode() {
     document.getElementById("moon").className = "fa fa-moon-o fa-lg";
   }
 }
-
+/* overlay nav */
 let menuBtn = document.querySelector(".btn-menu");
-let overlayAside = document.getElementById("slide-nav");
+let overlayAside = document.querySelector(".nav-overlay-nav");
 let closeBtn = document.getElementById("btn-close");
 
 function openOverlay() {
@@ -20,7 +21,9 @@ function openOverlay() {
 }
 
 function closeOverlay() {
-  if (openOverlay == true) {
+  if ((overlayAside.style.visibility = "visible")) {
     overlayAside.style.visibility = "hidden";
+  } else {
+    overlayAside.style.visibility = "visible";
   }
 }
