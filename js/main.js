@@ -1,14 +1,14 @@
 /* toggling between modes */
-function darkMode() {
-  let nightMode = document.getElementById("body");
-  nightMode.classList.toggle("dark-mode");
-  let nightModeNav = document.getElementById("nav-navbar");
-  nightModeNav.classList.toggle("dark-mode-nav");
+function lightMode() {
+  let dayMode = document.getElementById("body");
+  dayMode.classList.toggle("light-mode");
+  let dayLightNav = document.querySelector(".navbar");
+  dayLightNav.classList.toggle("light-mode-nav");
 
-  if (document.getElementById("moon").className == "fa fa-moon-o fa-lg") {
-    document.getElementById("moon").className = "fa fa-sun-o fa-lg";
-  } else {
+  if (document.getElementById("moon").className == "fa fa-sun-o fa-lg") {
     document.getElementById("moon").className = "fa fa-moon-o fa-lg";
+  } else {
+    document.getElementById("moon").className = "fa fa-sun-o fa-lg";
   }
 }
 /* overlay nav */
