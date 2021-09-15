@@ -1,8 +1,12 @@
+const menuBtn = document.querySelector(".btn-menu");
+const overlayAside = document.querySelector(".nav-overlay-nav");
+const closeBtn = document.getElementById("btn-close");
+const dayMode = document.getElementById("body");
+const dayLightNav = document.querySelector(".navbar");
+
 /* toggling between modes */
 function lightMode() {
-  let dayMode = document.getElementById("body");
   dayMode.classList.toggle("light-mode");
-  let dayLightNav = document.querySelector(".navbar");
   dayLightNav.classList.toggle("light-mode-nav");
 
   if (document.getElementById("moon").className == "fa fa-sun-o fa-lg") {
@@ -11,11 +15,8 @@ function lightMode() {
     document.getElementById("moon").className = "fa fa-sun-o fa-lg";
   }
 }
-/* overlay nav */
-let menuBtn = document.querySelector(".btn-menu");
-let overlayAside = document.querySelector(".nav-overlay-nav");
-let closeBtn = document.getElementById("btn-close");
 
+/* overlay nav */
 function openOverlay() {
   overlayAside.style.visibility = "visible";
 }
@@ -27,3 +28,4 @@ function closeOverlay() {
     overlayAside.style.visibility = "visible";
   }
 }
+
