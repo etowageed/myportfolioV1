@@ -20,20 +20,19 @@ body {
   color: #3d3d3d;
 }
 
-header {
+.header {
   width: 100%;
 }
 
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
 }
-nav ul {
+.nav-links {
   margin: 0;
   padding: 0;
-  visibility: hidden;
 }
-nav li {
+.navbar li {
   display: inline;
 }
 
@@ -54,10 +53,24 @@ nav li {
   z-index: 300;
 }
 
-nav ul a {
+.nav-links a {
   text-decoration: none;
   list-style: none;
-  color: #000000;
+}
+.nav-links {
+  margin-top: 15px;
+  float: right;
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}
+
+.nav-links li {
+  margin-right: 50px;
+}
+
+.nav-overlay-nav {
+  visibility: hidden;
 }
 
 .hero-section {
@@ -102,15 +115,15 @@ em {
 }
 
 .btn-hire {
+  display: inline-block;
   border: none;
-  width: 250px;
-  height: 60px;
-  padding: 20px;
+  padding: 20px 60px;
   background-color: #642087;
   color: #fff;
   font-weight: bold;
   border-radius: 50px;
   margin-top: 7%;
+  text-decoration: none;
 }
 .btn-hire:hover {
   background-color: #8a2be2;
@@ -121,8 +134,6 @@ em {
   font-size: 2.5rem;
   display: block;
   text-align: center;
-  /* margin-left: auto;
-  margin-right: auto; */
   transform: skewY(7deg);
 }
 .aboutMe-content {
@@ -208,15 +219,20 @@ em {
   display: table-cell;
 }
 
-.fa-bars {
-  vertical-align: middle;
-  text-align: center;
-  display: table-cell;
+.btn-contact {
+  background-color: #642087;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
 }
 
 .btn-menu {
-  border: none;
-  background: none;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+  visibility: hidden;
+  color: #eeae08;
 }
 .projects {
   width: 100%;
@@ -257,12 +273,10 @@ em {
 .intile-div-img {
   order: 1;
   width: 70%;
-  border: 1px solid red;
 }
 .intile-div {
   order: 2;
   padding: 3px;
-  border: 1px solid red;
 }
 
 .tileimg {
@@ -275,14 +289,61 @@ em {
 
 @keyframes rotation {
   from {
-    transform: rotate(-30deg);
+    transform: rotate(-20deg);
   }
   to {
-    transform: rotate(30deg);
+    transform: rotate(20deg);
   }
 }
 
 @media screen and (max-width: 640px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-overlay-nav {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    z-index: 200000;
+    visibility: hidden;
+  }
+  .nav-overlay-nav ul {
+    text-align: center;
+    margin-top: 200px;
+  }
+  .nav-overlay-nav ul li {
+    list-style: none;
+    margin-top: 20px;
+    color: #eeae08;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+  .nav-overlay-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .nav-overlay-nav ul li a:hover {
+    color: #eeae08;
+  }
+  .fa-times {
+    font-weight: lighter;
+  }
+  .btn-menu {
+    visibility: visible;
+    border: none;
+    background: none;
+    float: right;
+  }
+  .fa-bars {
+    float: right;
+  }
+
+  #btn-close {
+    background: none;
+    border: none;
+  }
   .btn-hire {
     border: none;
     width: 70%;
@@ -322,7 +383,7 @@ em {
 
   .btn-hire {
     border: none;
-    padding: 20px;
+    padding: 20px 60px;
     background-color: #642087;
     color: #fff;
     font-weight: bold;
@@ -379,91 +440,13 @@ em {
     order: 1;
     width: 100%;
     height: auto;
-    border: 1px solid red;
   }
 
   .intile-div {
     order: 2;
   }
 
-  .nav-overlay-nav {
-    width: 100%;
-    height: 100vh;
-    background-color: #000000;
-    position: fixed;
-    top: 0;
-    z-index: 200000;
-    visibility: hidden;
-  }
-  .nav-overlay-nav ul {
-    text-align: center;
-    margin-top: 200px;
-  }
-  .nav-overlay-nav ul li {
-    list-style: none;
-    margin-top: 20px;
-    color: #eeae08;
-    font-weight: normal;
-    font-size: 1.5rem;
-  }
-  .nav-overlay-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  .nav-overlay-nav ul li a:hover {
-    color: #eeae08;
-  }
-  .fa-times {
-    font-weight: lighter;
-  }
-  #btn-close {
-    background: none;
-    border: none;
-  }
   .contactMsg {
     font-size: 1.8rem;
-  }
-}
-
-@media screen and (min-width: 640px) and (max-width: 768px) {
-  .nav-links {
-    visibility: visible;
-    margin-top: 15px;
-    float: right;
-    position: absolute;
-    right: 0;
-    padding-right: 10px;
-  }
-
-  .nav-overlay-nav {
-    visibility: hidden;
-  }
-
-  .nav-links li {
-    margin-right: 50px;
-  }
-  .fa-bars {
-    visibility: hidden;
-  }
-
-  .btn-contact {
-    background-color: #642087;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 20px;
-    color: #fff;
-  }
-
-  .tiles {
-    width: 42%;
-    height: 30vh;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .nav-overlay-nav {
-    visibility: hidden;
   }
 }

@@ -17,12 +17,16 @@
   </head>
   <body id="body">
     <div class="container" id="container-div">
-      <header class="header">
+      <header class="header" id="home">
         <nav class="navbar" id="nav-navbar">
           <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact" class="btn-contact">Contact</a></li>
+            <li><a href="#home" style="color: #eeae08">Home</a></li>
+            <li><a href="#works" style="color: #eeae08">Work</a></li>
+            <li>
+              <a href="#contact" class="btn-contact" style="color: #eeae08"
+                >Contact Me</a
+              >
+            </li>
           </ul>
           <button class="btn-menu" onclick="openOverlay()">
             <i class="fa fa-bars fa-lg"></i>
@@ -33,7 +37,7 @@
         <div class="hero-content">
           <span class="greeting"> Hello there! 👋</span>
           <h1>I'm Gideon, a <em>UX Designer and Frontend Web Developer</em></h1>
-          <button class="btn-hire">HIRE ME</button>
+          <a href="#contact" class="btn-hire">HIRE ME</a>
         </div>
         <div id="hero-img">
           <img
@@ -50,9 +54,9 @@
         </span>
       </div>
 
-      <span class="workspan">Some of my works</span>
+      <span class="workspan" id="works">Some of my works</span>
       <!-- Projects tiles -->
-      <div class="projects" id="works">
+      <div class="projects">
         <div class="rect tiles">
           <div class="intile-div-img">
             <img src="imagew.png" alt="projects" class="tileimg" />
@@ -149,7 +153,7 @@
         </div>
       </div>
 
-      <!-- navigation -->
+      <!-- dropdown navigation -->
       <div class="nav-overlay-nav">
         <button id="btn-close" onclick="closeOverlay()">
           <i
@@ -159,7 +163,7 @@
         </button>
         <ul id="slide-nav">
           <li><a href="#home">Home</a></li>
-          <li><a href="#work">Work</a></li>
+          <li><a href="#works">Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
