@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spendn app</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-    <script src="main.js"></script>
-</body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="body">
+    <div class="container-study">
+      <header class="header" id="home">
+        <nav class="navbar" id="nav-navbar">
+          <ul class="nav-links">
+            <li><a href="index.html" style="color: #eeae08">Home</a></li>
+            <li><a href="index.html/#works" style="color: #eeae08">Work</a></li>
+            <li><a href="#cases" style="color: #eeae08">Case Studies</a></li>
+
+            <li>
+              <a
+                href="index.html/#contact"
+                class="btn-contact"
+                style="color: #eeae08"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+          <button class="btn-menu" onclick="openOverlay()">
+            <i class="fa fa-bars fa-lg"></i>
+          </button>
+        </nav>
+      </header>
+      <div class="artbody">
+        <div class="left-pane">
+          <h4>Case Studies</h4>
+
+          <ul class="sidelinks glassmorph">
+            <li><a href="#">Speercash</a></li>
+            <li><a href="#">Tetengo</a></li>
+            <li><a href="#">Fintech</a></li>
+            <li><a href="#">Speer</a></li>
+            <li><a href="#">cash</a></li>
+          </ul>
+        </div>
+        <div class="main-pane"></div>
+
+        <div class="right-pane"></div>
+      </div>
+    </div>
+    <button onclick="lightMode()" class="toggleBtn">
+      <i id="moon" class="fa fa-sun-o fa-lg"></i>
+    </button>
+    <script src="js/main.js"></script>
+  </body>
 </html>
