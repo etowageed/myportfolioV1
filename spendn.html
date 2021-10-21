@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spendn app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="body">
+  <body id="body">
     <div class="container-study">
       <header class="header" id="home">
         <nav class="navbar" id="nav-navbar">
           <ul class="nav-links">
             <li><a href="index.html" style="color: #eeae08">Home</a></li>
             <li><a href="index.html/#works" style="color: #eeae08">Work</a></li>
-            <li><a href="#cases" style="color: #eeae08">Case Studies</a></li>
+            <li>
+              <a href="spendn.html" style="color: #eeae08">Case Studies</a>
+            </li>
 
             <li>
               <a
@@ -32,24 +38,55 @@
       </header>
       <div class="artbody">
         <div class="left-pane">
-          <h4>Case Studies</h4>
+          <div class="aside glassmorph">
+            <h4>Case Studies</h4>
 
-          <ul class="sidelinks glassmorph">
-            <li><a href="#">Speercash</a></li>
-            <li><a href="#">Tetengo</a></li>
-            <li><a href="#">Fintech</a></li>
-            <li><a href="#">Speer</a></li>
-            <li><a href="#">cash</a></li>
-          </ul>
+            <ul class="sidelinks">
+              <li><a href="#">Spee</a></li>
+              <li><a href="#">Tete</a></li>
+              <li><a href="#">Fint</a></li>
+              <li><a href="#">Speer</a></li>
+              <li><a href="#">cash</a></li>
+            </ul>
+          </div>
         </div>
         <div class="main-pane"></div>
 
-        <div class="right-pane"></div>
+        <div class="right-pane">
+          <div class="aside-mob glassmorph">
+            <ul>
+              <li>
+                <a href="#"> <i class="fa fa-chevron-left"></i> </a>
+              </li>
+              <li> </li>
+              <li>
+                <a href="#"><i class="fa fa-chevron-right"></i>
+                </i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <button onclick="lightMode()" class="toggleBtn">
       <i id="moon" class="fa fa-sun-o fa-lg"></i>
     </button>
+     <!-- dropdown navigation -->
+     <div class="nav-overlay-nav">
+      <button id="btn-close" onclick="closeOverlay()">
+        <i
+          class="fa fa-times fa-lg"
+          style="color: #eeae08; position: absolute; right: 20px; top: 50px"
+        ></i>
+      </button>
+      <ul id="slide-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html/#works">Work</a></li>
+        <li><a href="index.html/#contact">Contact</a></li>
+        <li><a href="spendn.html">Case studies</a></li>
+      </ul>
+    </div>
+
     <script src="js/main.js"></script>
   </body>
 </html>

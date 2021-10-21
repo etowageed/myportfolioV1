@@ -249,6 +249,7 @@ em {
 }
 
 .tiles {
+  display: flex;
   width: 30%;
   height: 40vh;
   border-radius: 20px;
@@ -257,13 +258,9 @@ em {
   padding: 20px;
 }
 
-.rect {
-  display: flex;
-  padding: 20px;
-}
 .intile-div-img {
   order: 1;
-  width: 70%;
+  width: 80%;
 }
 .intile-div {
   order: 2;
@@ -300,15 +297,22 @@ em {
 h2 {
   margin-bottom: 10px;
 }
-
-.sidelinks {
-  width: fit-content;
-  text-align: left;
-  font-size: 1.5rem;
+.aside {
+  width: 50%;
+  text-align: center;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px;
-  position: fixed;
+  position: sticky;
+}
+.aside-mob {
+  visibility: hidden;
+}
+
+.sidelinks {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 1.5rem;
 }
 
 .sidelinks li {
@@ -337,6 +341,22 @@ h2 {
 }
 
 @media screen and (max-width: 640px) {
+  .aside {
+    display: none;
+  }
+  .aside-mob {
+    visibility: visible;
+    width: 60px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    position: sticky;
+    margin-left: 20px;
+  }
+  .aside-mob ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 20px;
+  }
   .artbody {
     grid-template-columns: 25% auto;
   }
